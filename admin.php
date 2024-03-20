@@ -77,6 +77,11 @@ if ($stmt->execute()) {
                                 <input type="submit" id="id" name="id" value="<?php echo $d["id"] ?>" class="button1" />
                             </form>
                         </th>
+                        <th>
+                            <form action="supprimer.php" method="post">
+                                <input type="submit" id="id" name="id" value="<?php echo $d["id"] ?>" class="button1" />
+                            </form>
+                        </th>
                     </tr>
                 <?php } ?>
             </table>
