@@ -41,6 +41,7 @@ if ($stmt->execute()) {
                     <th>CV</th>
                     <th>Lettre de Motivation</th>
                     <th>Refus</th>
+                    <th>Accepter</th>
                 </tr>
 
                 <?php foreach ($candidat as $d) { ?>
@@ -78,7 +79,7 @@ if ($stmt->execute()) {
                             </form>
                         </th>
                         <th>
-                            <form action="supprimer.php" method="post">
+                            <form action="accepter.php" method="post">
                                 <input type="submit" id="id" name="id" value="<?php echo $d["id"] ?>" class="button1" />
                             </form>
                         </th>

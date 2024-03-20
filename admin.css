@@ -66,6 +66,18 @@ body{
   border-radius: 5px;
   cursor: pointer;
 }
+.button1 {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 5px 5px;
+  background-color: rgb(27, 180, 27);
+  color: rgb(27, 180, 27);
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 1024px) {
   body {
