@@ -1,7 +1,7 @@
 <?php
 include "traitement.php";
 
-$stmt = $pdo->prepare("select * from  candidat");
+$stmt = $pdo->prepare("SELECT * FROM  candidat WHERE accepter = 0 ");
 if ($stmt->execute()) {
     $candidat = $stmt->fetchAll();
 }
@@ -80,7 +80,7 @@ if ($stmt->execute()) {
                         </th>
                         <th>
                             <form action="accepter.php" method="post">
-                                <input type="submit" id="id" name="id" value="<?php echo $d["id"] ?>" class="button1" />
+                                <input type="submit" id="id" name="id" value="<?php echo $d["id"] ?>" class="button2" />
                             </form>
                         </th>
                     </tr>
